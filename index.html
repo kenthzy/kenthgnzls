@@ -4,24 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg" />
+    <link rel="stylesheet" href="style.css">
     <title>Kenneth Gonzales | Portfolio</title>
 </head>
 
-<body class="bg-black bg-blend-darken pt-10">
-  <header>
-    <div class="container mx-auto flex items-start">
-      <img src="assets/img/profile.jpg" alt="Kenneth Gonzales Logo" class="rounded-md w-40 h-40 mr-8">
+<body class="bg-black min-h-screen">
+    <!-- Container with responsive padding and max width -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+        <header>
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <img src="assets/img/profile.jpg"
+                        alt="Kenneth Gonzales"
+                        class="rounded-lg w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 object-cover shadow-lg">
+                </div>
 
-      <!-- Wrap name + badge together -->
-      <div class="flex items-center mt-5">
-        <h1 class="text-3xl text-white font-semibold">Kenneth Gonzales</h1>
-        <img src="assets/img/badge-check-svgrepo-com.svg" alt="Badge" class="w-8 h-8 ml-2">
-      </div>
+                <!-- Info Section -->
+                <div class="flex-1 text-center sm:text-left">
+                    <!-- Name and Badge Row with Theme Toggle -->
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3 mb-2">
+                        <div class="flex items-center justify-center sm:justify-start gap-2">
+                            <h1 class="text-2xl text-white font-bold">Kenneth Gonzales</h1>
+                            <img src="assets/img/check.svg" alt="Verified Badge" class="w-4 h-4">
+                        </div>
+                        
+                        <!-- Theme Toggle Button -->
+                        <div class="flex justify-center sm:justify-end">
+                            <button id="themeToggle" class="relative w-12 h-6 bg-gray-600 rounded-full px-1 transition-colors duration-300 ease-in-out focus:outline-none">
+                                <div id="toggleCircle" class="relative w-5 h-5 bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ease-in-out flex items-center justify-center">
+                                    <i id="toggleIcon" class="fas fa-moon text-xs text-indigo-800"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Location -->
+                    <p class="text-sm text-white font-medium mb-2">
+                        <i class="fas fa-map-marker-alt text-gray-400 mr-1"></i>
+                        Quezon City, Philippines
+                    </p>
+
+                    <!-- Job Title -->
+                    <p class="text-base text-white font-normal mb-5">Aspiring IT Professional</p>
+
+                    <!-- Link Section - Fixed Translate Issue -->
+                    <div class="mt-4 space-y-3 sm:space-y-0 sm:flex sm:space-x-3">
+                        <a class="btn-transition px-3 py-1 bg-white text-black rounded-lg font-medium text-sm inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
+                            <i class="fa-solid fa-download mr-2"></i>
+                            Download CV
+                        </a>
+                        <a class="btn-transition px-3 py-1 border border-white text-white bg-transparent rounded-lg font-medium text-sm inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
+                            <i class="fa-solid fa-envelope mr-2"></i>
+                            Email
+                        </a>
+                        <a class="btn-transition involvements px-3 py-1 border border-orange-400 text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg font-medium text-sm inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
+                          <i class="fa-solid fa-trophy mr-2"></i>
+                          Involvements
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="mt-12 lg:mt-16 text-white">
+           
+            
+          
+        </main>
     </div>
-  </header>
+
+   <script src="script.js"></script>
 </body>
+
+</html>
