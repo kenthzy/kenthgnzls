@@ -13,63 +13,60 @@
 
 <body class="bg-black min-h-screen">
     <!-- Container with responsive padding and max width -->
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
-        <header>
-            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
+        <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
+            <div class="flex flex-row items-start gap-6 sm:gap-8">
                 <!-- Profile Image -->
                 <div class="flex-shrink-0">
-                    <img src="assets/img/profile.jpg"
-                        alt="Kenneth Gonzales"
-                        class="rounded-lg w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 object-cover shadow-lg">
+                    <img src="assets/img/profile.jpg"alt="Kenneth Gonzales" class="rounded-lg w-30 h-40 sm:w-36 sm:h-36 lg:w-40 lg:h-40 object-cover shadow-lg mx-auto" />
                 </div>
 
                 <!-- Info Section -->
-                <div class="flex-1 text-center sm:text-left">
-                    <!-- Name and Badge Row with Theme Toggle -->
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3 mb-2">
-                        <div class="flex items-center justify-center sm:justify-start gap-2">
-                            <h1 class="text-2xl text-white font-bold">Kenneth Gonzales</h1>
+                <div class="flex-1">
+                    <!-- Name and Theme Toggle -->
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-xl sm:text-2xl text-white font-bold">Kenneth Gonzales</h1>
                             <img src="assets/img/check.svg" alt="Verified Badge" class="w-4 h-4">
                         </div>
-                        
-                        <!-- Theme Toggle Button -->
-                        <div class="flex justify-center sm:justify-end">
-                            <button id="themeToggle" class="relative w-12 h-6 bg-gray-600 rounded-full px-1 transition-colors duration-300 ease-in-out focus:outline-none">
-                                <div id="toggleCircle" class="relative w-5 h-5 bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ease-in-out flex items-center justify-center">
-                                    <i id="toggleIcon" class="fas fa-moon text-xs text-indigo-800"></i>
-                                </div>
-                            </button>
-                        </div>
+                        <button id="themeToggle" class="relative w-12 h-6 bg-gray-600 rounded-full px-1 transition-colors duration-300 ease-in-out focus:outline-none">
+                            <div id="toggleCircle" class="relative w-5 h-5 bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ease-in-out flex items-center justify-center">
+                                <i id="toggleIcon" class="fas fa-moon text-xs text-indigo-800"></i>
+                            </div>
+                        </button>
                     </div>
                     
                     <!-- Location -->
-                    <p class="text-sm text-white font-medium mb-2">
-                        <i class="fas fa-map-marker-alt text-gray-400 mr-1"></i>
+                    <p class="text-xs sm:text-sm text-white font-medium mt-2 sm:mt-3 mb-1 sm:mb-2">
+                        <img src="assets/img/location.svg" alt="Location" class="inline w-4 h-4 text-gray-400 mr-1">
                         Quezon City, Philippines
                     </p>
 
                     <!-- Job Title -->
-                    <p class="text-base text-white font-normal mb-5">Aspiring IT Professional</p>
+                    <p class="text-sm sm:text-base text-white font-normal mb-0 sm:mb-1">Computer Engineering Graduate</p>
 
-                    <!-- Link Section - Fixed Translate Issue -->
-                    <div class="mt-4 space-y-3 sm:space-y-0 sm:flex sm:space-x-3">
-                        <a class="btn-transition px-3 py-1 bg-white text-black rounded-lg font-medium text-sm inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
-                            <i class="fa-solid fa-download mr-2"></i>
-                            Download CV
-                        </a>
-                        <a class="btn-transition px-3 py-1 border border-white text-white bg-transparent rounded-lg font-medium text-sm inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
-                            <i class="fa-solid fa-envelope mr-2"></i>
-                            Email
-                        </a>
-                        <a class="btn-transition involvements px-3 py-1 border border-orange-400 text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg font-medium text-sm inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
-                          <i class="fa-solid fa-trophy mr-2"></i>
-                          Involvements
-                        </a>
+                 <div class="mt-5 flex flex-wrap gap-2">
+                        <div class="flex gap-2 w-full sm:w-auto">
+                            <a class="btn-transition flex-1 sm:flex-initial px-4 py-1 sm:px-3 text-xs sm:text-sm bg-white text-black rounded-lg font-medium inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
+                                <i class="fa-solid fa-download mr-1 sm:mr-2"></i>
+                                Download CV
+                            </a>
+                            <a class="btn-transition flex-1 sm:flex-initial px-4 py-1 sm:px-3 text-xs sm:text-sm border border-white text-white bg-transparent rounded-lg font-medium inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
+                                <i class="fa-solid fa-envelope mr-1 sm:mr-2"></i>
+                                Send Email
+                            </a>
+                        </div>
+                        
+                        <div class="w-full sm:w-auto" id="involvements-first">
+                            <a class="btn-transition involvements px-4 py-1 border-orange-400 text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg font-medium text-sm inline-flex items-center justify-center md:justify-start sm:justify-start hover:-translate-y-1 cursor-pointer w-full">
+                                <i class="fa-solid fa-trophy mr-2 sm:mr-2"></i>
+                                Credly Badge Wallet
+                                <i class="fa-solid fa-chevron-right ml-auto sm:ml-3"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+        
         </header>
-
         <!-- Main Content Section -->
         <main class="mt-12 lg:mt-16 text-white">
            
@@ -82,3 +79,4 @@
 </body>
 
 </html>
+                            
