@@ -8,6 +8,12 @@ body {
   position: relative;
   overflow: hidden;
 }
+.image:active {
+  content: url('assets/img/second-icon.svg');
+}
+.image:hover {
+  cursor: pointer;
+}
 
 .involvements::before {
   content: '';
