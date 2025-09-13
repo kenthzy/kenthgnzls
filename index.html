@@ -17,28 +17,36 @@
         <!-- Left vertical line -->
         <div class="hidden sm:block absolute top-0 left-[900px] h-full border-r border-zinc-800 z-0" style="width:1px"></div>
         <!-- Right vertical line -->
-        <div class="hidden sm:block absolute top-0 right-[900px] h-full border-l border-zinc-800 z-0" style="width:1px"></div>
+        <div class="hidden sm:block absolute top-0 right-[899px] h-full border-l border-zinc-800 z-0" style="width:1px"></div>
 
         <!-- Main content layer -->
         <div class="relative z-10">
-            <nav class="p-4 flex justify-between items-center">
-                <a href="#" class="text-white text-xl sm:text-2xl font-bold">kenthgnzls.me</a>
-                <div class="space-x-2">
-                    <a href="#email"
-                        class="bg-black text-white border border-white py-1 px-4 rounded inline-flex items-center transition text-sm font-medium">
-                        <i class="fas fa-envelope py-1"></i>
-                    </a>
+            <nav class="p-3 flex justify-between items-center">
+                <a href="#" class="text-white text-xl sm:text-2xl font-bold mx-4">kenthgnzls.me</a>
+                <div class="space-x-1 mx-4">
                     <a href="#badge"
-                        class="involvements bg-gradient-to-r from-orange-500 to-yellow-400  py-1 px-4 text-white rounded inline-flex items-center transition text-sm font-medium">
-                        <i class="fas fa-trophy py-1"></i>
+                        class="px-2 text-white rounded inline-flex items-center transition text-base font-medium">
+                        <i class="fas fa-trophy"></i>
+                    </a>
+                     <a href="#search"
+                        class="text-white 900 px-2 rounded inline-flex items-center transition text-base font-medium">
+                        <i class="fas fa-search"></i>
                     </a>
                 </div>
             </nav>
             <!-- Cover Photo Section -->
-            <div class="relative w-full h-48 bg-zinc-800 overflow-hidden mb-6">
-                <!-- You can replace the gradient with an actual image by adding: -->
-                <!-- style="background-image: url('your-image-url.jpg'); background-size: cover; background-position: center;" -->
+            <div class="relative w-full h-32 sm:h-48 bg-zinc-800 overflow-hidden mb-6"></div>
+                 <!-- Profile photo -->
+             <img src="https://placehold.co/150x150" alt="Profile photo" class="absolute left-3 -bottom-[50px] w-28 h-28 rounded-full border-4 border-black shadow-lg object-cover z-20 sm:left-6 sm:-bottom-[70px] sm:w-[150px] sm:h-[150px]"/>
             </div>
+            <!-- Extra Buttons -->
+            <div class="absolute top-50 right-8 space-x-2 z-20">
+                <button class="bg-black border border-white text-white px-3 py-2 rounded-full text-sm sm:text-sm hover:bg-zinc-700 transition">
+                    <i class="fas fa-envelope"></i>
+                </button>
+                <button class="bg-white text-black px-3 py-2 rounded-full font-bold text-sm sm:text-sm hover:bg-zinc-700 transition">Download CV</button>
+                </div>  
+
         </div>
       </div>
     </div>
