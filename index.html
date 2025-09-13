@@ -11,64 +11,24 @@
     <title>Kenneth Gonzales | Portfolio</title>
 </head>
 
-<body class="bg-black min-h-screen">
-    <!-- Container with responsive padding and max width -->
-        <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
-            <div class="flex flex-row items-start gap-6 sm:gap-8">
-                <!-- Profile Image -->
-                <div class="flex-shrink-0">
-                    <img src="assets/img/profile.jpg"alt="Kenneth Gonzales" class="image rounded-lg w-28 h-28 sm:w-36 sm:h-36 object-cover shadow-lg mx-auto" />
-                </div>
-
-                <!-- Info Section -->
-                <div class="flex-1">
-                    <!-- Name and Theme Toggle -->
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <h1 class="text-lg sm:text-2xl text-white font-bold">Kenneth Gonzales</h1>
-                            <img src="assets/img/check.svg" alt="Verified Badge" class="w-4 h-4">
-                        </div>
-                        <button id="themeToggle" class="relative w-10 h-5 sm:w-12 sm:h-6 bg-gray-600 rounded-full px-1 transition-colors duration-300 ease-in-out focus:outline-none">
-                            <div id="toggleCircle" class="relative w-4 h-4 sm:w-5 sm:h-5 bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ease-in-out flex items-center justify-center">
-                                <i id="toggleIcon" class="fas fa-moon text-[0.6rem] sm:text-xs text-indigo-800"></i>
-                            </div>
-                        </button>
-                    </div>
-                    
-                    <!-- Location -->
-                    <p class="text-xs sm:text-sm text-white font-medium mt-2 sm:mt-3 mb-1 sm:mb-2">
-                        <i class="fa-solid fa-location-dot mr-1"></i>
-                        Metro Manila, Philippines
-
-                    <!-- Job Title -->
-                    <p class="text-xs sm:text-base text-white font-normal">Computer Engineering</p>
-
-                 <div class="mt-3 flex-wrap gap-2">
-                        <div class="flex gap-2"></div>
-                            <a class="btn-transition px-2 py-0.5 sm:py-1 sm:px-3 text-xs sm:text-sm bg-white text-black rounded-lg font-medium inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
-                                <i class="fa-solid fa-download mr-0.5 sm:mr-2"></i>
-                                Download CV
-                            </a>
-                            <a class="btn-transition px-2 py-0.5 sm:py-1 sm:px-3 text-xs sm:text-sm border border-white text-white bg-transparent rounded-lg font-medium inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
-                                <i class="fa-solid fa-envelope mr-0.5 sm:mr-2"></i>
-                                Send Email
-                            </a>
-                            <a class="btn-transition involvements px-2 py-1 sm:py-2 sm:px-3 text-xs sm:text-sm bg-gradient-to-r from-orange-400 to-yellow-500 text-white rounded-lg font-medium inline-flex items-center justify-center hover:-translate-y-1 cursor-pointer">
-
-                                <i class="fa-solid fa-trophy"></i>
-                            </a>    
-                        </div>
-                    </div>
-                </div>
-        
-        </header>
-        <!-- Main Content Section -->
-        <main class="mt-12 lg:mt-16 text-white">
-           
-            
-          
-        </main>
+<body class="bg-black min-h-screen mx-auto max-w-[900px] px-4">
+    
+   <nav class="p-6 flex justify-between items-center">
+    <a href="#" class="text-white text-2xl font-bold">kenthgnzls</a>
+    <div class="space-x-2">
+        <a href="#email" class="bg-black text-white border border-white py-1 px-4 rounded inline-flex items-center transition text-sm font-medium">
+            <i class="fas fa-envelope py-1"></i>
+        </a>
+        <a href="#badge" class="involvements bg-gradient-to-r from-orange-500 to-yellow-400  py-1 px-4 text-white rounded inline-flex items-center transition text-sm font-medium">
+            <i class="fas fa-trophy py-1"></i>
+        </a>
     </div>
+    </nav>
+    
+
+
+
+
 
    <script src="script.js"></script>
 </body>
