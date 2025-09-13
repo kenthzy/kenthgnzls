@@ -14,6 +14,7 @@
 <body class="bg-black min-h-screen">
     <div class="flex justify-center">
       <div class="relative w-full max-w-[900px] min-h-screen mx-auto">
+        
         <!-- Left vertical line -->
         <div class="hidden sm:block absolute top-0 left-[900px] h-full border-r border-zinc-800 z-0" style="width:1px"></div>
         <!-- Right vertical line -->
@@ -25,31 +26,48 @@
                 <a href="#" class="text-white text-xl sm:text-2xl font-bold mx-4">kenthgnzls.me</a>
                 <div class="space-x-1 mx-4">
                     <a href="#badge"
-                        class="px-2 text-white rounded inline-flex items-center transition text-base font-medium">
+                        class="px-2 text-white rounded inline-flex items-center transition text-base font-medium hover:bg-zinc-700 rounded-full p-2">
                         <i class="fas fa-trophy"></i>
                     </a>
                      <a href="#search"
-                        class="text-white 900 px-2 rounded inline-flex items-center transition text-base font-medium">
+                        class="text-white 900 px-2 rounded inline-flex items-center transition text-base font-medium hover:bg-zinc-700 rounded-full p-2">
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
             </nav>
+
             <!-- Cover Photo Section -->
             <div class="relative w-full h-32 sm:h-48 bg-zinc-800 overflow-hidden mb-2 sm:mb-4"></div>
                 <!-- Profile photo -->
                 <img src="https://placehold.co/150x150" alt="Profile photo" class="absolute left-3 -bottom-[50px] w-28 h-28 rounded-full border-4 border-black shadow-lg object-cover z-20 sm:left-6 sm:-bottom-[70px] sm:w-[150px] sm:h-[150px]"/>
             </div>
+
             <!-- Extra Buttons -->
             <div class="absolute top-50 right-8 space-x-2 z-20">
-                <button class="bg-black border border-white text-white px-2 py-1 sm:px-3 sm:py-2 rounded-full text-xs sm:text-sm hover:bg-zinc-700 transition">
+                <button class="bg-black border border-gray-500   text-white px-3 py-2 rounded-full text-sm hover:bg-zinc-700 transition">
                     <i class="fas fa-envelope"></i>
                 </button>
-                <button class="bg-white text-black px-2 py-1 sm:px-3 sm:py-2 rounded-full font-bold text-xs sm:text-sm hover:bg-zinc-700 transition">Resume</button>
-            </div>  
+                <button class="bg-white text-black px-3 py-2 rounded-full font-bold text-sm hover:bg-zinc-700 transition">Resume</button>
+            </div>
 
-        </div>
-      </div>
-    </div>
+            <!--Profile Info Section -->
+            <div class="mt-16 sm:mt-20 px-4 sm:px-6">
+
+                <div class="flex items-center">
+                    <h1 class="text-white text-xl sm:text-2xl font-bold">Kenneth Gonzales</h1>
+                    <img src="/assets/img/check.svg" alt="Verified Badge" class="w-4 h-4 sm:w-5 sm:h-5 ml-2">
+                </div>
+
+                <p class="text-zinc-500 text-sm sm:text-base">Computer Engineering</p>
+                <p class="text-white text-sm sm:text-base mt-2">Everybody wants to rule the world</p>
+                    <div class="flex items-center space-x-4">
+                        <p class="text-zinc-500 text-sm sm:text-base mt-2"><i class="fas fa-map-marker-alt mr-2"></i>Metro Manila, Philippines</p>
+                        <p class="text-zinc-500 text-sm sm:text-base mt-2"><i class="fas fa-calendar-alt mr-2"></i>Joined December 2002</p>
+                    </div>
+                </div>
+          </div>  
+        </div>    
+         
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
