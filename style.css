@@ -67,5 +67,30 @@ body {
             transition: all 0.3s ease-in-out;
 }
 
-
-
+.tab {
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0.5rem;
+  color: #71717a; /* zinc-500 */
+  transition: color 0.2s;
+}
+.tab.active {
+  color: #fff !important; /* White for active tab */
+}
+.tab:hover {
+  color: #fff;
+}
+.nav-tabs {
+  position: relative;
+}
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  background: #3b82f6; /* Tailwind blue-500 */
+  transition: left 0.3s, width 0.3s;
+  pointer-events: none
+  left: 0;
+  width: 0;
+}
