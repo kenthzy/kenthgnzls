@@ -23,3 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+document.getElementById('toggle-stack').addEventListener('click', function() {
+    var moreStack = document.getElementById('more-tech-stack');
+    var btn = this;
+    if (moreStack.classList.contains('hidden')) {
+        moreStack.classList.remove('hidden');
+        btn.textContent = 'View Less';
+    } else {
+        moreStack.classList.add('hidden');
+        btn.textContent = 'View More';
+    }
+});
