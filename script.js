@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     projects: document.getElementById("projects-section"),
     experience: document.getElementById("experience-section"),
     certificates: document.getElementById("certificates-section"),
+    blogs: document.getElementById("blogs-section"),
   };
 
   tabs.forEach(tab => {
