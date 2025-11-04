@@ -11,6 +11,20 @@
     <title>Kenneth Gonzales | Portfolio</title>
 </head>
 
+  <!-- Popup -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <button id="closePopup">
+        <i class="fas fa-times"></i>
+    </button>
+    <h2 class="text-lg font-bold">Competitions History</h2>
+    <ul class="mt-4 list-disc list-inside text-left">
+        <li><strong>Top 10 Finalist</strong> - Inventi Hackathon Challenge<span class="float-right text-xs font-normal text-amber-500 mx-5">2025</span></li>
+        <li><strong>5th Place</strong> - Codekada Innovation Hackathon<span class="float-right text-xs font-normal text-amber-500 mx-5">2025</span></li>
+        <li><strong>3rd Place</strong> - Enigma National Hackathon<span class="float-right text-xs font-normal text-amber-500 mx-5">2025</span></li>
+    </ul>
+  </div>
+
 <body class="bg-black min-h-screen">
     <div class="flex justify-center">
         <div class="relative w-full max-w-[700px] min-h-screen mx-auto">
@@ -54,7 +68,8 @@
                     </button>
                 </a>
                 <button
-                    class="bg-black border border-amber-500 text-amber-500 px-3 py-2 rounded-full text-sm hover:bg-zinc-700 transition">
+                      id="trophyBtn" 
+                      class="bg-black border border-amber-500 text-amber-500 px-3 py-2 rounded-full text-sm hover:bg-zinc-700 transition">
                     <i class="fas fa-trophy"></i>
                 </button>
                 <button
