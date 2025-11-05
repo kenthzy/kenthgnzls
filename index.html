@@ -11,19 +11,35 @@
     <title>Kenneth Gonzales | Portfolio</title>
 </head>
 
-  <!-- Popup -->
-  <div class="overlay" id="overlay"></div>
-  <div class="popup" id="popup">
-    <button id="closePopup">
+<!-- Popup Overlay -->
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden transition-opacity duration-300"></div>
+<!-- Popup Modal -->
+<div id="popup" class="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black rounded-2xl shadow-2xl z-50 p-8 w-full max-w-md sm:max-w-lg hidden transition-all duration-300 scale-95">
+    <!-- Close Button -->
+    <button id="closePopup" class="absolute top-2 right-4 text-white text-base sm:text-lg hover:text-amber-400 transition p-1">
         <i class="fas fa-times"></i>
     </button>
-    <h2 class="text-lg font-bold">Competitions History</h2>
-    <ul class="mt-4 list-disc list-inside text-left">
-        <li><strong>Top 10 Finalist</strong> - Inventi Hackathon Challenge<span class="float-right text-xs font-normal text-amber-500 mx-5">2025</span></li>
-        <li><strong>5th Place</strong> - Codekada Innovation Hackathon<span class="float-right text-xs font-normal text-amber-500 mx-5">2025</span></li>
-        <li><strong>3rd Place</strong> - Enigma National Hackathon<span class="float-right text-xs font-normal text-amber-500 mx-5">2025</span></li>
+    <ul class="mt-2 list-none text-left text-white space-y-4">
+        <li class="flex justify-between items-center">
+            <span class="text-xs sm:text-base">
+                <span class="text-amber-400 text-4xl leading-none align-middle">•</span>
+                <span class="text-zinc-300 ml-2">Inventi Hackathon Challenge Finalist</span>
+            </span>
+        </li>
+        <li class="flex justify-between items-center">
+            <span class="text-xs sm:text-base">
+                <span class="text-amber-400 text-4xl leading-none align-middle">•</span>
+                <span class="text-zinc-300 ml-2">Codekada Innovation Hackathon Finalist</span>
+            </span>
+        </li>
+        <li class="flex justify-between items-center">
+            <span class="text-xs sm:text-base">
+                <span class="text-amber-400 text-4xl leading-none align-middle">•</span>
+                <span class="text-zinc-300 ml-2">Breaking Enigma National Hackathon Finalist</span>
+            </span>
+        </li>
     </ul>
-  </div>
+</div>
 
 <body class="bg-black min-h-screen">
     <div class="flex justify-center">
