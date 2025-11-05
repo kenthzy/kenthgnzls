@@ -70,22 +70,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // TROPHY BUTTON POPUP LOGIC
- const btn = document.getElementById('trophyBtn');
-    const popup = document.getElementById('popup');
-    const overlay = document.getElementById('overlay');
-    const closeBtn = document.getElementById('closePopup');
+const btn = document.getElementById('trophyBtn');
+const popup = document.getElementById('popup');
+const overlay = document.getElementById('overlay');
 
-    btn.addEventListener('click', () => {
-      popup.style.display = 'block';
-      overlay.style.display = 'block';
-    });
+btn.addEventListener('click', () => {
+  popup.style.display = 'block';
+  overlay.style.display = 'block';
+});
 
-    closeBtn.addEventListener('click', () => {
-      popup.style.display = 'none';
-      overlay.style.display = 'none';
-    });
-
-    overlay.addEventListener('click', () => {
-      popup.style.display = 'none';
-      overlay.style.display = 'none';
-    });
+overlay.addEventListener('click', () => {
+  popup.style.display = 'none';
+  overlay.style.display = 'none';
+});
