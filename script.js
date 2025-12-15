@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       text: "Kenneth is reliable and easy to work with, always willing to assist with IT and desktop support tasks. He picks up new systems quickly, adapts to different tools, and collaborates well with the team to get things done efficiently.",
-      name: "Miguel Santos",
+      name: "Jerome Edison Lotivio",
       role: "IT Desktop Engineer, Intouch CX",
     },
   ];
@@ -159,3 +159,4 @@ document.addEventListener("DOMContentLoaded", function () {
   render(currentIndex);
   startAutoRotate();
 });
+
