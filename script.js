@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       text: "Kenneth is fun to talk to and genuinely enjoys conversations around ideas and tech. He always matches technical depth with clear communication, and is simply good to work with in a team setting.",
       name: "Dean Posada",
-      role: "Enterprise System Administrator",
+      role: "Enterprise System Administrator, China Bank PH",
     },
     {
       text: "Kenneth is one of the students who is genuinely passionate about building projects in the areas I teach. He shows strong drive and clear goals in coding, which consistently push his work beyond basic expectations.",
@@ -159,4 +159,5 @@ document.addEventListener("DOMContentLoaded", function () {
   render(currentIndex);
   startAutoRotate();
 });
+
 
