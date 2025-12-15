@@ -88,19 +88,24 @@ overlay.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = [
     {
-      text: "Kenneth is a pleasure to work with. He always matches technical depth with clear communication, making collaboration effortless across teams.",
+      text: "Kenneth is fun to talk to and genuinely enjoys conversations around ideas and tech. He always matches technical depth with clear communication, and is simply good to work with in a team setting.",
       name: "Dean Posada",
       role: "Enterprise System Administrator",
     },
     {
-      text: "Kenneth consistently brings structured thinking to messy problems and ships automation that saves hours every week for our support engineers.",
-      name: "Ria Velasco",
-      role: "Operations Lead, HumAIn",
+      text: "Kenneth is one of the students who is genuinely passionate about building projects in the areas I teach. He shows strong drive and clear goals in coding, which consistently push his work beyond basic expectations.",
+      name: "John Julius Baldia",
+      role: "Manager for Operational Excellence, Bizbloqs",
     },
     {
-      text: "Working with Kenneth means fast iteration, reliable delivery, and someone who never hesitates to mentor teammates on new tooling.",
+      text: "Kenneth was easy to work with as an intern and always willing to help in development. He learns quickly, adapts to the pace of the project, asks thoughtful questions, and contributes effectively to the team.",
+      name: "Jan Phillip Dacallos",
+      role: "Development Team Lead, Codebility",
+    },
+    {
+      text: "Kenneth is reliable and easy to work with, always willing to assist with IT and desktop support tasks. He picks up new systems quickly, adapts to different tools, and collaborates well with the team to get things done efficiently.",
       name: "Miguel Santos",
-      role: "Product Manager, Codebility",
+      role: "IT Desktop Engineer, Intouch CX",
     },
   ];
 
