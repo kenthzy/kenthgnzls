@@ -83,3 +83,74 @@ overlay.addEventListener('click', () => {
   popup.style.display = 'none';
   overlay.style.display = 'none';
 });
+
+// RECOMMENDATION ROTATION LOGIC
+document.addEventListener("DOMContentLoaded", function () {
+  const testimonials = [
+    {
+      text: "Kenneth is a pleasure to work with. He always matches technical depth with clear communication, making collaboration effortless across teams.",
+      name: "Dean Posada",
+      role: "Enterprise System Administrator",
+    },
+    {
+      text: "Kenneth consistently brings structured thinking to messy problems and ships automation that saves hours every week for our support engineers.",
+      name: "Ria Velasco",
+      role: "Operations Lead, HumAIn",
+    },
+    {
+      text: "Working with Kenneth means fast iteration, reliable delivery, and someone who never hesitates to mentor teammates on new tooling.",
+      name: "Miguel Santos",
+      role: "Product Manager, Codebility",
+    },
+  ];
+
+  const textEl = document.getElementById("recommendation-text");
+  const nameEl = document.getElementById("recommendation-name");
+  const roleEl = document.getElementById("recommendation-role");
+  const dots = document.querySelectorAll(".recommendation-dot");
+
+  if (!textEl || dots.length === 0) {
+    return;
+  }
+
+  let currentIndex = 0;
+  let intervalId;
+
+  function render(index) {
+    const active = testimonials[index % testimonials.length];
+    textEl.textContent = `"${active.text}"`;
+    nameEl.textContent = active.name;
+    roleEl.textContent = active.role;
+    dots.forEach((dot, dotIndex) => {
+      const isActive = dotIndex === index;
+      dot.classList.toggle("text-amber-400", isActive);
+      dot.classList.toggle("text-white", !isActive);
+      dot.classList.toggle("opacity-60", !isActive);
+    });
+  }
+
+  function startAutoRotate() {
+    intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      render(currentIndex);
+    }, 7000);
+  }
+
+  function jumpTo(index) {
+    clearInterval(intervalId);
+    currentIndex = index;
+    render(currentIndex);
+    startAutoRotate();
+  }
+
+  dots.forEach(dot => {
+    const dotIndex = Number(dot.dataset.index);
+    if (Number.isNaN(dotIndex)) {
+      return;
+    }
+    dot.addEventListener("click", () => jumpTo(dotIndex));
+  });
+
+  render(currentIndex);
+  startAutoRotate();
+});
