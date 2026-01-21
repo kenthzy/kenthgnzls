@@ -102,3 +102,77 @@ body {
 #tab-content {
   transition: min-height 0.3s;
 }
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #ffffff !important;
+  color: #18181b !important;
+}
+
+body.light-mode .text-white {
+  color: #18181b !important;
+}
+
+body.light-mode .bg-black {
+  background-color: #ffffff !important;
+}
+
+body.light-mode .bg-zinc-800 {
+  background-color: #f4f4f5 !important; /* zinc-100 */
+}
+
+body.light-mode .border-zinc-800 {
+  border-color: #e4e4e7 !important; /* zinc-200 */
+}
+
+body.light-mode .border-zinc-700 {
+  border-color: #d4d4d8 !important; /* zinc-300 */
+}
+
+body.light-mode .text-zinc-500 {
+  color: #52525b !important; /* zinc-600 */
+}
+
+body.light-mode .text-zinc-400 {
+  color: #52525b !important; /* zinc-600 */
+}
+
+body.light-mode .text-zinc-300 {
+  color: #27272a !important; /* zinc-800 */
+}
+
+body.light-mode .tab.active,
+body.light-mode .tab:hover {
+  color: #000 !important;
+}
+
+body.light-mode .tab-underline {
+  background-color: #000 !important;
+}
+
+/* Invert Resume Button in Light Mode */
+body.light-mode button.bg-white.text-black {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+}
+
+/* Adjust Tech Stack buttons in light mode */
+body.light-mode button.bg-transparent.text-white.border-white {
+  color: #18181b !important;
+  border-color: #18181b !important;
+}
+
+/* Adjust Popup */
+body.light-mode #popup {
+  background-color: #ffffff !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+body.light-mode #popup .text-white {
+  color: #000 !important;
+}
+
+/* Keep Amber Accent */
+body.light-mode .text-amber-400, 
+body.light-mode .text-amber-500 {
+  color: #d97706 !important; /* Darker amber for contrast on white */
+}
