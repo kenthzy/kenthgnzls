@@ -73,6 +73,9 @@ document.addEventListener("DOMContentLoaded", function() {
 const btn = document.getElementById('trophyBtn');
 const popup = document.getElementById('popup');
 const overlay = document.getElementById('overlay');
+const profilePhotoButton = document.getElementById('profilePhotoButton');
+const profileViewer = document.getElementById('profileViewer');
+const closeProfileViewer = document.getElementById('closeProfileViewer');
 
 btn.addEventListener('click', () => {
   popup.style.display = 'block';
@@ -82,6 +85,35 @@ btn.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   popup.style.display = 'none';
   overlay.style.display = 'none';
+  profileViewer.classList.add('hidden');
+  profileViewer.classList.remove('flex');
+});
+
+profilePhotoButton.addEventListener('click', () => {
+  profileViewer.classList.remove('hidden');
+  profileViewer.classList.add('flex');
+  overlay.style.display = 'block';
+});
+
+closeProfileViewer.addEventListener('click', () => {
+  profileViewer.classList.add('hidden');
+  profileViewer.classList.remove('flex');
+  overlay.style.display = 'none';
+});
+
+profileViewer.addEventListener('click', (event) => {
+  if (event.target === profileViewer) {
+    closeProfileViewer.click();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    popup.style.display = 'none';
+    profileViewer.classList.add('hidden');
+    profileViewer.classList.remove('flex');
+    overlay.style.display = 'none';
+  }
 });
 
 // RECOMMENDATION ROTATION LOGIC

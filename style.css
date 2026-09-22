@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
-.libre-franklin-<uniquifier> {
-  font-family: "Libre Franklin", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
 body {
   font-family: 'Libre Franklin', system-ui, sans-serif;
 }
@@ -18,7 +10,7 @@ body {
   cursor: pointer;
 }
 
-/* Glowing effect for involvement cards 
+/* Glowing effect for involvement cards
 .involvements {
   box-shadow: 0 0 15px rgba(251, 146, 60, 0.4), 0 0 30px rgba(251, 146, 60, 0.2);
   position: relative;
@@ -94,7 +86,7 @@ body {
   bottom: 0;
   background: #3b82f6; /* Tailwind blue-500 */
   transition: left 0.3s, width 0.3s;
-  pointer-events: none
+  pointer-events: none;
   left: 0;
   width: 0;
 }
@@ -172,7 +164,7 @@ body.light-mode #popup .text-white {
 }
 
 /* Keep Amber Accent */
-body.light-mode .text-amber-400, 
+body.light-mode .text-amber-400,
 body.light-mode .text-amber-500 {
   color: #d97706 !important; /* Darker amber for contrast on white */
 }

@@ -73,6 +73,19 @@
         </li>
     </ul>
 </div>
+<!-- Profile Photo Viewer -->
+<div id="profileViewer" class="fixed inset-0 z-[60] hidden items-center justify-center p-6" role="dialog"
+    aria-modal="true" aria-label="Profile photo viewer">
+    <div class="relative aspect-square w-[min(85vw,420px)]">
+        <img src="assets/img/profile.png" alt="Kenneth Gonzales profile photo enlarged"
+            class="w-full h-full border-4 border-white shadow-2xl object-cover">
+        <button id="closeProfileViewer" type="button"
+            class="absolute top-3 right-3 w-10 h-10 flex items-center justify-center rounded-full bg-black/70 text-white text-xl hover:bg-black hover:text-amber-400 transition"
+            aria-label="Close profile photo viewer">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
 
 <body class="bg-black min-h-screen">
     <div class="flex justify-center">
@@ -104,8 +117,12 @@
                         class="w-full h-full object-cover object-center" />
                 </div>
                 <!-- Profile photo -->
-                <img src="assets/img/profile.png" alt="Profile photo"
-                    class="absolute left-3 -bottom-[50px] w-28 h-28 rounded-full border-4 border-black shadow-lg object-cover z-20 sm:left-6 sm:-bottom-[70px] sm:w-[150px] sm:h-[150px]" />
+                <button id="profilePhotoButton" type="button"
+                    class="absolute left-3 -bottom-[50px] w-28 h-28 rounded-full border-4 border-black shadow-lg object-cover z-20 sm:left-6 sm:-bottom-[70px] sm:w-[150px] sm:h-[150px] cursor-pointer hover:opacity-90 transition"
+                    aria-label="Open profile photo">
+                    <img src="assets/img/profile.png" alt="Profile photo"
+                        class="w-full h-full rounded-full object-cover" />
+                </button>
             </div>
 
             <!-- Extra Buttons -->
