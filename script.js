@@ -39,6 +39,15 @@ document.getElementById('toggle-stack').addEventListener('click', function () {
   }
 });
 
+// ABOUT ME READ MORE LOGIC
+document.getElementById('aboutReadMore').addEventListener('click', function () {
+  const moreAbout = document.getElementById('aboutMore');
+  const isExpanded = !moreAbout.classList.contains('hidden');
+
+  moreAbout.classList.toggle('hidden', isExpanded);
+  this.textContent = isExpanded ? 'Read More' : 'Read Less';
+});
+
 
 // TAB SWITCHING LOGIC
 document.addEventListener("DOMContentLoaded", function() {
